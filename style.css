@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url(./images/bgimg.webp);
+
+}
+.btn{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 2px solid rgba(17, 78, 164, 0.877);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: rgba(128, 32, 6, 0.82);
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
+    text-decoration: underline;
+    box-shadow: inset;
+}
+
+.modal{
+    width: 32rem;
+    height: 28rem;
+    background-color: #ffb6c177;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    animation: show 0.5s;
+    box-shadow: 8px 8px 10px rgba(136, 6, 6, 0.817);
+}
+@keyframes show {
+    0%,1% {
+    transform: translateY(-99%)
+    }
+}
+.modalBtn{
+    width: 9rem;
+    height: 2.5rem;
+
+}
+.active{
+    background-color: aqua;
+}
+.active .modal{
+    display: flex;
+}
+.active .clickMe{
+    display: none;
+}

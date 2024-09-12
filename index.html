@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class>
+    <div class="modal">
+    <h2 style="text-decoration: underline; color: rgb(146, 114, 9);">HELLO EVERYONE</h2>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;"><strong>Hi I am <span style="color: rgb(17, 72, 109);">PRAGYA SINGH</span>, currrently in my 1st year of BTech. in Information Technology. I am an enthusiastic WEB DEVELOPER with a strong passion for creating innovative and user-friendly web solutions.I specialize in front-end technologies like HTML, CSS and JavaScript.</strong> </p>
+    <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; color: rgb(10, 60, 82);">I am excited to tackle new challenges and collaborate with others to build amazing web experiences!</p>
+    <div class="btn modalBtn">CLOSE</div>
+</div>
+<div class="btn clickMe">CLICK ME</div>
+</body>
+   <script>
+    let body = document.querySelector("body");
+    let modalBtn = document.querySelector(".modalBtn");
+    let clickMeBtn = document.querySelector(".clickMe");
+    clickMeBtn.addEventListener("click",function(){
+        body.classList.add("active");
+    })
+    modalBtn.addEventListener('click',function(){
+        body.classList.remove("active");
+    })
+</script> 
+</body>
+</html>
