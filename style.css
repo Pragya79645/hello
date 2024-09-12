@@ -66,3 +66,23 @@ body{
 .active .clickMe{
     display: none;
 }
+@media (min-width: 1200px) {
+    .container {
+         padding: 50px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .container {
+         padding: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .container {
+         padding: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+         padding: 23px;
+    }
+}
