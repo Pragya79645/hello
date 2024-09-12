@@ -41,7 +41,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.1rem;
     position: absolute;
     top: 0;
     animation: show 0.5s;
